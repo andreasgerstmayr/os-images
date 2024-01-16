@@ -1,0 +1,2 @@
+FROM ghcr.io/ublue-os/silverblue-nvidia:39
+RUN rm /usr/bin/ld && ostree container commit
