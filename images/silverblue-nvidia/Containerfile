@@ -1,2 +1,7 @@
 FROM ghcr.io/ublue-os/silverblue-nvidia:39
-RUN rm /usr/bin/ld && ostree container commit
+COPY root /
+RUN rpm-ostree install \
+      btrbk strace wireshark \
+      terminator zsh make ripgrep \
+      code docker golang pipenv && \
+    ostree container commit
