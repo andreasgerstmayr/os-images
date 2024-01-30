@@ -4,7 +4,7 @@ RUN mkdir -p /var/lib/alternatives && \
     rpm-ostree install \
       btrbk strace wireshark \
       terminator zsh make ripgrep \
-      code golang pipenv \
+      code golang pipenv npm \
       docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin \
       && \
     rm -r /var/lib/alternatives && \
